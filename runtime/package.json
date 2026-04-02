@@ -1,0 +1,53 @@
+{
+  "name": "typesht-runtime",
+  "version": "0.1.0",
+  "description": "Python behavior runtime for TypeSht — preserves Python semantics in JavaScript environments",
+  "main": "typesht-runtime.js",
+  "types": "typesht-runtime.d.ts",
+  "exports": {
+    ".": {
+      "import": "./typesht-runtime.js",
+      "types": "./typesht-runtime.d.ts"
+    }
+  },
+  "files": [
+    "typesht-runtime.js",
+    "typesht-runtime.js.map",
+    "typesht-runtime.d.ts",
+    "typesht-runtime.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "typesht",
+    "runtime",
+    "python",
+    "typescript",
+    "javascript",
+    "compiler",
+    "transpiler",
+    "python-to-javascript",
+    "type-safe"
+  ],
+  "author": "Jeiel K Libert",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlibert/typesht.git",
+    "directory": "runtime"
+  },
+  "homepage": "https://github.com/jlibert/typesht#readme",
+  "bugs": {
+    "url": "https://github.com/jlibert/typesht/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.0.0"
+  }
+}

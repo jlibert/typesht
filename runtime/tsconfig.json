@@ -1,0 +1,17 @@
+
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": ".",
+    "rootDir": "."
+  },
+  "include": ["typesht-runtime.ts"],
+  "exclude": ["node_modules"]
+}
