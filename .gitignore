@@ -1,0 +1,58 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build & distribution
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# mypy / type checking
+.mypy_cache/
+.dmypy.json
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Node / npm ────────────────────────────────────────────────────────────────
+node_modules/
+
+# Build output (generated from typesht-runtime.ts — don't commit compiled output)
+runtime/typesht-runtime.js
+runtime/typesht-runtime.js.map
+runtime/typesht-runtime.d.ts
+runtime/typesht-runtime.d.ts.map
+
+# npm debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── TypeSht compiler output ───────────────────────────────────────────────────
+output/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

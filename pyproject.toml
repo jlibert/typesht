@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typesht"
+version = "0.1.0"
+description = "Python-syntax to TypeScript/JavaScript compiler"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Jeiel K Libert" }
+]
+keywords = [
+    "compiler", "transpiler", "python", "typescript",
+    "javascript", "type-safe", "python-to-javascript"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Software Development :: Code Generators",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jlibert/typesht"
+Repository = "https://github.com/jlibert/typesht"
+"Bug Tracker" = "https://github.com/jlibert/typesht/issues"
+
+[project.scripts]
+typesht = "typesht.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"typesht" = ["py.typed"]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",
+    "pytest",
+    "pytest-cov",
+]
