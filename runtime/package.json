@@ -47,7 +47,7 @@
     "url": "https://github.com/jlibert/typesht/issues"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0",
+    "@types/node": "^22.0.0",
     "typescript": "^5.0.0"
   }
 }
