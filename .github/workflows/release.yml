@@ -78,6 +78,10 @@ jobs:
         working-directory: runtime
         run: npm ci
 
+      - name: Build runtime
+        working-directory: runtime
+        run: npm run build
+
       - name: Publish to npm
         working-directory: runtime
         run: npm publish
