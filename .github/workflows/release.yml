@@ -59,6 +59,10 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
 
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
       - uses: actions/checkout@v5
 
@@ -77,8 +81,6 @@ jobs:
       - name: Publish to npm
         working-directory: runtime
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   github-release:
     name: Create GitHub Release
