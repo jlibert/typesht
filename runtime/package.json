@@ -1,6 +1,6 @@
 {
   "name": "typesht-runtime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Python behavior runtime for TypeSht — preserves Python semantics in JavaScript environments",
   "main": "typesht-runtime.js",
   "types": "typesht-runtime.d.ts",
