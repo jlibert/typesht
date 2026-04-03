@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Question or Discussion
+    url: https://github.com/jlibert/typesht/discussions
+    about: Ask questions and discuss ideas here rather than opening an issue
+  - name: TypeSht Documentation
+    url: https://github.com/jlibert/typesht#readme
+    about: Check the README before opening an issue
