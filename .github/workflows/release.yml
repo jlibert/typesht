@@ -69,7 +69,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: "22"
+          node-version: "24"
           registry-url: "https://registry.npmjs.org"
           cache: "npm"
           cache-dependency-path: runtime/package-lock.json
@@ -81,6 +81,9 @@ jobs:
       - name: Build runtime
         working-directory: runtime
         run: npm run build
+    
+      - name: Check npm version
+        run: npm --version
 
       - name: Publish to npm
         working-directory: runtime
