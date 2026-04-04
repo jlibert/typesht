@@ -81,9 +81,6 @@ jobs:
       - name: Build runtime
         working-directory: runtime
         run: npm run build
-    
-      - name: Check npm version
-        run: npm --version
 
       - name: Publish to npm
         working-directory: runtime
@@ -93,6 +90,9 @@ jobs:
     name: Create GitHub Release
     needs: [publish-pypi, publish-npm]
     runs-on: ubuntu-latest
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     permissions:
       contents: write
